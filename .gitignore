@@ -1,0 +1,7 @@
+
+*.bin
+*.lock
+*.class
+*.class
+*.lock
+*/build

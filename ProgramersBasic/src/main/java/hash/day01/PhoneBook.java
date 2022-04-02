@@ -28,9 +28,31 @@ public class PhoneBook {
         return true;
     }
 
+    /**
+     * 정확성: 83.3
+     * 효율성: 16.7
+     * 합계: 100.0 / 100.0
+     */
+    public boolean solution2(String[] phone_book) {
+        // 정렬한다
+        Arrays.sort(phone_book);
+        boolean result = true;
+        for (int i = 0; i < phone_book.length - 1; i++) {
+            // 시작한다.
+            if (phone_book[i + 1].startsWith(phone_book[i])) {
+                result = false;
+                break;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         String[] s_array = {"119", "97674223", "1195524421"};
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.solution(s_array);
+
+        PhoneBook phoneBook2 = new PhoneBook();
+        phoneBook2.solution2(s_array);
     }
 }

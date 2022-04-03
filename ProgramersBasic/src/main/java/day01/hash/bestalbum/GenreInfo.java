@@ -1,4 +1,4 @@
-package hash.day01.bestalbum;
+package day01.hash.bestalbum;
 
 public class GenreInfo implements Comparable<GenreInfo> {
     String genre;

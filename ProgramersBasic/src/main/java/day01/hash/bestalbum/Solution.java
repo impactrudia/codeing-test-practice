@@ -1,4 +1,4 @@
-package hash.day01.bestalbum;
+package day01.hash.bestalbum;
 
 import java.util.Arrays;
 import java.util.HashMap;
